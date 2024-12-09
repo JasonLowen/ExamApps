@@ -1,0 +1,152 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}
+#registerRolePage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%; 
+    background: url(../../assets/library.jpg)no-repeat;
+    background-size: cover;
+}
+.registerRoleContainer{
+    position: relative;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+.registerRoleInput{
+    position: relative;
+    margin: 30px 0;
+    min-width: 330px;
+    border-bottom: 2px solid #fff;
+}
+.registerRoleInput label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+}
+input:focus ~ label,
+input:valid ~ label{
+    top: -5px;
+    transition: 0.5s;
+}
+.registerRoleInput input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+.registerRoleInput ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+.registerRoleContent button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.registerRoleContent button:hover{
+    opacity: 0.7;
+    transition: .2s;
+}
+.registerRoleContent button:active{
+    opacity: 0.5;
+    transition: .2s;
+}
+.register{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
+}
+
+.registerRoleForms{
+    display: flex;
+    gap: 50px;
+}
+
+.dropdown-container {
+    position: relative;
+    margin: 20px 0; 
+    width: 100%; 
+}
+
+.dropdown {
+    width: 100%; 
+    height: 50px; 
+    background: transparent; 
+    border: 2px solid #fff; 
+    border-radius: 10px; 
+    color: #fff;
+    font-size: 1em; 
+    padding: 10px; 
+    outline: none; 
+    appearance: none; 
+}
+
+.dropdown:focus {
+    border-color: rgba(255, 255, 255, 0.7); 
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); 
+    transition: 0.3s ease; 
+}
+
+.dropdown-container::after {
+    content: "▼"; 
+    position: absolute;
+    top: 50%;
+    right: 15px; 
+    transform: translateY(-50%);
+    color: #fff;
+    pointer-events: none; 
+    font-size: 1em; 
+}
+
+option {
+    background: #333; 
+    color: #fff; 
+}
